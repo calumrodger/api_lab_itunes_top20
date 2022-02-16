@@ -9,11 +9,9 @@ const SongList = ({songs}) => {
     })
 
     return (
-        <div>
-            <ul>
-                {songListItems}
-            </ul>
-        </div>
+        <li class="song">
+            {songListItems}
+        </li>
     )
 }
 

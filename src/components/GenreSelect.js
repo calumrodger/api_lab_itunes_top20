@@ -20,7 +20,7 @@ const GenreSelector = ({genres, onGenreClick}) => {
 
     return(
         <select defaultValue="" onChange={handleChange}>
-            <option value="" selected>Genre Selecta</option>
+            <option value="">Genre Selecta</option>
             {genreOptions}
         </select>
     )

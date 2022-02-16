@@ -1,19 +1,16 @@
 import React from 'react';
-import GenreSelector from '../components/GenreSelect';
+import './Song.css'
 
-const Song = ({song}) => {
+const Song = ({song, index}) => {
 
 
     return (
     <>
-    <li>
-        <p>{song['im:name'].label}</p>
+    <ul>
+        <p>{song.position}: {song['im:name'].label}</p>
         <p>{song['im:artist'].label}</p>
         <img src={song['im:image'][2].label}/>
-        <p>{song.position}</p>
-
-    
-    </li>
+    </ul>
     </>
     )}
 

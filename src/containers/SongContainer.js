@@ -27,10 +27,12 @@ const SongContainer = (genreList) => {
     }
 
     return (
-        <div className="main-container">
+        <>
         <GenreSelector genres={genreList} onGenreClick={onGenreClick}/>
+        <li className="main-container"> 
             {songs ? <SongList songs={songs}/> : null}
-        </div>
+        </li>
+        </>
     )
 }
 

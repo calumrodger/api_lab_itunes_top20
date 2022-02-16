@@ -1,4 +1,21 @@
+* {
+  list-style-type: none;
+}
+
 .main-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: peru;
+    padding: 50px;
+    margin: 0 -20px;
+    gap: 20px;
   }
+
+.song {
+  flex: 33%;
+  flex-direction: row;
+  max-width: fit-content;
+  background-color: paleturquoise;
+  margin: 20 0px;
+  gap: 20px;
+}
